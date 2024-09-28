@@ -1,0 +1,23 @@
+
+vector<int> compareTriplets(vector<int> a, vector<int> b) {
+    vector<int> c(2);
+    
+    vector<int>::iterator it = b.begin();
+    for (int num : a) {
+        int num2 = *it;
+        if(num>num2)
+        {
+            c[0]++;
+        }
+        else if(num<num2){
+            c[1]++;
+        }
+        it++;
+        }
+        
+    
+    
+    
+    return c;
+
+}
